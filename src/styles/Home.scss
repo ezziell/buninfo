@@ -2,6 +2,7 @@
 
 * {
   background-color: var(--bg-color);
+  box-sizing: border-box;
 }
 
 .home-container {
@@ -12,47 +13,63 @@
   flex-direction: column;
   font-family: "Dosis", sans-serif;
 }
+
 .home-header {
   margin: 18px 0 0 0;
   text-align: center;
   line-height: 9px;
   z-index: 2;
 }
+
 .home-h1 {
   text-transform: uppercase;
   font-size: 2.4rem;
   font-weight: 500;
 }
+
 .home-h2 {
   text-transform: uppercase;
   font-size: 1.3rem;
   font-weight: 400;
 }
+
 .home-figure {
-  display: flex;
   justify-content: center;
-  position: relative;
-  bottom: 122px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   z-index: 1;
+  margin-left: 56px;
 }
+
 .home-img1 {
-  width: 688px;
+  width: 488px;
   object-fit: cover;
-  height: 688px;
+  height: 488px;
   border-radius: 50%;
 }
+
+.home-btn-container{
+  display: grid;
+  justify-content: center;
+}
+
+
 .home-link {
-    position: relative;
-    bottom: 236px;
-    left: 52px;
-    border-radius: 16px;
-   width: 236px;
-   padding: 12px 0 12px 0;
-   background-color: var(--lg-purple);
-   z-index: 2;
-   text-align: center;
-   text-transform: uppercase;
-   text-decoration: none;
-   color: black;
-   font-size: 1.18rem;
+  text-align: center;
+  border-radius: 16px;
+  width: 236px;
+  padding: 12px 0 12px 0;
+  background-color: var(--lg-purple);
+  z-index: 2;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-size: 1.18rem;
+}
+
+
+@media (min-width: 480px) {
+  .home-link{
+    background-color: rebeccapurple;
+  }
 }

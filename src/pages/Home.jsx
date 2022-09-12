@@ -12,7 +12,9 @@ const Home = () => {
             <figure className='home-figure'>
                 <img src='https://images.pexels.com/photos/4588071/pexels-photo-4588071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' className='home-img1'/>
             </figure>
+            <div className='home-btn-container'>
             <a href='/' className='home-link'>ver más</a>
+            </div>
         </div>
         </>
     );
