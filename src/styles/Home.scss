@@ -39,6 +39,7 @@
   grid-template-columns: repeat(4, 1fr);
   z-index: 1;
   margin-left: 56px;
+  margin-right: 68px;
 }
 
 .home-img1 {
@@ -67,9 +68,73 @@
   font-size: 1.18rem;
 }
 
+.home-h2.dos{
+  display: none;
+}
+.home-ul{
+  display: none;
+}
+
 
 @media (min-width: 480px) {
-  .home-link{
-    background-color: rebeccapurple;
+  .home-figure{
+    display: flex;
+    justify-content: center;
   }
+  .home-link{
+    width: 278px;
+  }
+  .home-h2.dos{
+    display: none;
+  }
+  .home-ul{
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-body-container{
+    display: flex;
+    justify-content: center;
+    margin-right: 62px;
+  }
+  .home-btn-container{
+    position: relative;
+    top: 92px;
+  }
+  .home-figure{
+    margin-right: 262px;
+  }
+  .home-img1{
+    height: 528px;
+    width: 528px;
+  }
+.home-h2.dos{
+  width: 350px;
+  font-size: 1.6rem;
+  display: flex;
+}
+.home-ul{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  bottom: 52px;
+  right: 172px;
+}
+.home-li{
+  margin-right: 18px;
+  list-style: none;
+}
+.home-link{
+  height: 48px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 342px;
+}
+.home-h2.dos,
+.home-link{
+  position: relative;
+  right: 92px;
+}
 }
